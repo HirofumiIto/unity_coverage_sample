@@ -1,7 +1,7 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c99 -g
+CFLAGS = -Wall -Wextra -std=c99 -g -fprofile-arcs -ftest-coverage -Itest/unity
 TARGET = test_runner
-SRCS = src/my_module.c test/test_my_module.c test/unity/unity.c
+SRCS = $(wildcard *.c)
 OBJS = $(SRCS:.c=.o)
 
 all: $(TARGET)
