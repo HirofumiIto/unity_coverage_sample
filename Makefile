@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c99 -g -fprofile-arcs -ftest-coverage -Itest/unity
+CFLAGS = -Wall -Wextra -std=c99 -g -fprofile-arcs -ftest-coverage -Itest/unity -Isrc
 
 TARGET = test_runner
 
